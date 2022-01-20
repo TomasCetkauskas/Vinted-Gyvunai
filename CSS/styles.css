@@ -1,0 +1,16 @@
+.col-9{                  /* kontroliuoja logo vieta ir dyddi*/
+    margin: auto;               
+    text-align: center;
+    padding-left: 100px;
+    
+}
+.col-3{             /* button isdestymas*/
+    padding-left: 100px;
+}
+
+.col-12{        /* karuseles atitraikimas is sonu */
+    padding-top: 25px;          
+    padding-left: 150px;
+    padding-right: 150px;
+   
+}
