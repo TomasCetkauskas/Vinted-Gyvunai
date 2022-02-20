@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://kit.fontawesome.com/12507643e6.js" crossorigin="anonymous"></script>
-
+  <script src="../JS/second_page.js"></script>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <div class="container bg-light">
+  <div class="container bg-light ">
     <header class="row">
       <!-- <div class="row">  -->
       <div class="col-3 imgsize ">
@@ -34,41 +34,98 @@
         <nav class="nav nav-pills flex-column flex-sm-row">
           <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page"
             href="../index.html">Augintiniai</a>
-          <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#">Apie mus</a>
+          <a class="flex-sm-fill text-sm-center nav-link" aria-current="pages" href="#">Apie mus</a>
           <a class="flex-sm-fill text-sm-center nav-link" href="#">Rėmėjai</a>
           <a class="flex-sm-fill text-sm-center nav-link " href="#">Kontaktai</a>
         </nav>
       </div>
       <!-- </div>     -->
     </header>
-
-    <body>
-
+    <main>
       <div class="container bg-light">
-        <!-- </div>    kas cia toliau turi buti ?   -->
+        <div class="row">
+          <div class="text"><p>Mūsų misija – mažinti beglobių gyvūnų skaičių humaniškomis priemonėmis, t.y. gyvūnų sterilizacija/kastracija, atsakingas dovanojimas ir visuomenės švietimas.</p>
+           <p> Mūsų vizija – sumažėjęs beglobių gyvūnų skaičius, retesni žiauraus elgesio su gyvūnais atvejai, atsakingas augintinio rinkimasis, auginimas ir priežiūra.</p>
+           <img src="../IMG/images.jfif" class="img-thumbnail" height="150px" width="150" walt="Pūkis">
+          </div>
+          <div class="col-12">
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Visi Gyvūnai</button>
+              <button class="btn" onclick="filterSelection('Dog')"> Šunys</button>
+              <button class="btn" onclick="filterSelection('Cat')"> Katės</button>
+            </div>
+            
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="container">
+              <div class="filterDiv Dog">
+                <h4>Pūkis</h4>
+              <img src="../IMG/cody-board-tnNVJd_nrw8-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="Pūkis">  
+                <p>Sibiro haskių istorija yra viena žavingiausių ir įdomiausių. Manoma, kad šios veislės šunys gyveno su čiukčių tauta šiaurės 
+                  rytų Sibire prieš 3000 metų. Gyveno ten, kur žiemą temperatūra nukrenta žemiau -30° C šalčio ir kur nuolat siautėja pūgos... 
+                  Šie šunys buvo pagrindinė susisiekimo priemonė, jie buvo naudojami kinkiniuose. Kinkinyje būdavo net iki 20 šunų. Įkinkyti šunys 
+                  su varovu įveikdavo ilgas distancijas – kartais  nukeliaudavo iki 160 kilometrų.</p>
+                </div>
+              <div class="filterDiv Dog">
+                <h4>Hercas</h4>
+                <img src="../IMG/parttime-portraits-atOlntWcO4k-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="hercas">  
+                <p>
+                  Auksaspalvis retriveris yra idealus kompanionas, ištikimas šuo, mylintis visus šeimos narius. Kiekvieną žmogų ir gyvūną jis pasitinka vizgindamas uodegą, puikiai sutaria su visais. Tai grožio ir proto vienoje šuns veislėje harmonija. Auksaspalviai retriveriai yra ištikimi ir paklusnūs, ramaus būdo ir inteligentiškų manierų.
+                  Jie netinka sargauti.
+                </p>
+                </div>
+              <div class="filterDiv Dog">
+                <h4>Mačo</h4>
+                <img src="../IMG/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="macio"> 
+                <p>Prancūzų buldogų skiriamasis bruožas – didelės ausys, dėl kurių šuo neretai primena šikšnosparnį. Tai yra nedideli, tačiau labai tvirti šunys, pasižymintys žaismingumu ir neišsenkančia energija. Prancūzų buldogas yra užsispyręs, tačiau labai gudrus šuo – savo intelektinius sugebėjimus dažniausiai naudoja savų tikslų siekimui. Paprastai sutaria su visais šeimos nariais, mielai žaidžia su vaikais, nevengia kitų šunų ar kačių draugijos. Nors prancūzų buldogai yra nedideli, tačiau tokie tikrai nesijaučia – 
+                  jei  reikės, būtinai stos ir prieš dešimtį kartų didesnį „priešą“.</p>
+                </div>
+              <div class="filterDiv Cat">
+                <h4>Blusius</h4>
+                <img src="../IMG/2-bro-s-media-HIWmYLqVA9w-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="macio">
+                <p>Norvegų miškinė katė (angl. Norwegian Forest cat, norv. Norsk skogkatt) – natūrali pusiau ilgaplaukių kačių veislė. Labai panaši į Meino meškėno veislės kates, dėl to dažnai painiojamos. Norvegų miškinės katės galva trikampė, tiesi, o Meino 
+                  meškėno katės snukutis ilgesnis, kampuotesnis.</p>
+                </div>
+              <div class="filterDiv Cat">
+                <h4>Momo</h4>
+                <img src="../IMG/250px-Longhairedmunchkin.jpg" class="img-thumbnail" height="150px" width="150" walt="Momo">
+                <p>Trumpakojė katė, arba Munčkinas (angl. Munchkin) – mutacinė kačių veislė. Išskirtinė savybė – labai trumpos kojos. Tai pakankamai nauja veislė, atsiradusi JAV, o vėliau paplitusi ir Prancūzijoje.</p>
+              </div>
+              <div class="filterDiv Dog">
+                <h4>Kenzas</h4>
+                <img src="../IMG/file70679962_fotolia-70018688.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+                <p>Australijos aviganis - turi labai stiprius ganymo ir saugojimo instinktus, o ištvermė ir energija tiesiog neišsemiama. Tai ištikimi, paklusnūs šunys, stipriai prisirišę prie savo šeimininko, tačiau ne visuomet labai lengvai prisileidžiantys svetimus žmones ar gyvūnus.
+                </p>
+              </div>
+              <div class="filterDiv Cat">
+                <h4>Nimrodas</h4>
+                <img src="../IMG/3-78.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+                <p>Škotų nulėpausis katinas. Šių kačių skiriamasis bruožas — ypatinga ausų forma ir jų mokėjimas stovėti ant užpakalinių kojų. Dėl tokių ausų jos laikomos 
+                  vienomis iš įdomiausių kačių. Tuo pačiu šios katės yra vienos iš protingiausių, nes jos puikiai bendrauja ir
+                   mėgsta judrius žaidimus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </body>
+    </main>
     <footer class="row">
-      <div class="col-3 "> <img src="../IMG/MicrosoftTeams-image.png " height="150px" width="150" class="img-thumbnail"
-          alt="logotipas"></div>
+      <div class="col-3 "> <img src="../IMG/MicrosoftTeams-image.png " height="150px" width="150" class="img-thumbnail" alt="logotipas"></div>
       <div class="col-9 footer ">
-        <table style="height: 100px;">
-          <tbody>
-            <tr>
-              <td class="align-middle  ">
-                <nav class="navbar navbar-light bg-light">
-                  <form class="container-fluid justify-content-start">
-                    <a class="btn btn-primary" href="#" role="button">Rekvizitai</a>
-                    <a class="btn btn-primary" href="#" role="button"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-primary" href="#" role="button"><i class="fab fa-facebook"></i>
-                      Facebook</li></a>
-                    <a class="btn btn-primary" href="#" role="button"><i class="fas fa-envelope"></i></a>
-                  </form>
-              </td>
-            </tr>
+          <table style="height: 100px;">
+              <tbody>
+                  <tr>
+                       <td class="align-middle  "> <nav class="navbar navbar-light bg-light">
+                        <form class="container-fluid justify-content-start">
+                          <a class="btn btn-primary" href="#" role="button">Rekvizitai</a>
+                          <a class="btn btn-primary" href="#" role="button"><i class="fab fa-instagram"></i></a>
+                          <a class="btn btn-primary" href="#" role="button"><i class="fab fa-facebook"></i>
+                            Facebook</li></a>
+                          <a class="btn btn-primary" href="#" role="button"><i class="fas fa-envelope"></i></a>
+                         </form>
+                        </td>
+                  </tr>
           </tbody>
-        </table>
+      </table>
     </footer>
   </div>
 </body>
