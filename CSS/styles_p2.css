@@ -7,11 +7,12 @@
   background-color: rgb(244, 240, 248);
   color: #1d1b1b;
   width: 300px;
- 
+  height: 580px;
   text-align: center;
   margin: 2px;
   display:none; /* Hidden by default */
 }
+
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -33,7 +34,7 @@
 }
 
 /* Add a dark background to the active button */
-.btn.active {
+.btn.active{
   background-color: #666;
   color: white;
 }
@@ -41,7 +42,6 @@
     text-align: center;
     padding-left: 190px;
 }
-
 .text{
 text-align: center;
 padding-top: 20px;
