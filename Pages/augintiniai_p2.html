@@ -33,7 +33,7 @@
       <div class="col-9 ">
         <nav class="nav nav-pills flex-column flex-sm-row">
           <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page"
-            href="../index.html">Augintiniai</a>
+            href="">Augintiniai</a>
           <a class="flex-sm-fill text-sm-center nav-link" aria-current="pages" href="apiemus_p4.html">Apie mus</a>
           <a class="flex-sm-fill text-sm-center nav-link" href="remejai_p5.html">Rėmėjai</a>
           <a class="flex-sm-fill text-sm-center nav-link " href="kontaktai_p6.html">Kontaktai</a>
@@ -50,61 +50,65 @@
           </div>
           <div class="col-12">
             <div id="myBtnContainer">
-              <button class="btn active" onclick="filterSelection('all')"> Visi Gyvūnai</button>
-              <button class="btn" onclick="filterSelection('Dog')"> Šunys</button>
-              <button class="btn" onclick="filterSelection('Cat')"> Katės</button>
+              <button class="btn active btn-color-grey" onclick="filterSelection('all')"> Visi Gyvūnai</button>
+              <button class="btn btn-color-grey" onclick="filterSelection('Dog')"> Šunys</button>
+              <button class="btn btn-color-grey" onclick="filterSelection('Cat')"> Katės</button>
+              <button class="btn btn-color-grey" onclick="filterSelection('till')"> Katės iki metų</button> 
+              <button class="btn btn-color-grey" onclick="filterSelection('year')"> Šunys iki metų</button> 
+              <button class="btn btn-color-grey" onclick="filterSelection('after')">Katės nuo metų </button> 
+              <button class="btn btn-color-grey" onclick="filterSelection('under')">Šunys nuo metų </button> 
             </div>
             
             <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
             <div class="container">
-              <div class="filterDiv Dog">
+              <div class="filterDiv Dog under">
                 <h4>Pūkis</h4>
-              <img src="../IMG/cody-board-tnNVJd_nrw8-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="Pūkis">  
-                <p>Sibiro haskių istorija yra viena žavingiausių ir įdomiausių. Manoma, kad šios veislės šunys gyveno su čiukčių tauta šiaurės 
-                  rytų Sibire prieš 3000 metų. Gyveno ten, kur žiemą temperatūra nukrenta žemiau -30° C šalčio ir kur nuolat siautėja pūgos... 
-                  Šie šunys buvo pagrindinė susisiekimo priemonė, jie buvo naudojami kinkiniuose. Kinkinyje būdavo net iki 20 šunų. Įkinkyti šunys 
-                  su varovu įveikdavo ilgas distancijas – kartais  nukeliaudavo iki 160 kilometrų.</p>
+              <img src="../IMG/cody-scott-milewski-ubDougWF758-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="Pūkis">  
                 </div>
-              <div class="filterDiv Dog">
-                <h4>Hercas</h4>
-                <img src="../IMG/parttime-portraits-atOlntWcO4k-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="hercas">  
-                <p>
-                  Auksaspalvis retriveris yra idealus kompanionas, ištikimas šuo, mylintis visus šeimos narius. Kiekvieną žmogų ir gyvūną jis pasitinka vizgindamas uodegą, puikiai sutaria su visais. Tai grožio ir proto vienoje šuns veislėje harmonija. Auksaspalviai retriveriai yra ištikimi ir paklusnūs, ramaus būdo ir inteligentiškų manierų.
-                  Jie netinka sargauti.
-                </p>
+              <div class="filterDiv Dog year">
+                <h4>Hana</h4>
+                <img src="../IMG/hannah-grace-fk4tiMlDFF0-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="hercas">  
                 </div>
-              <div class="filterDiv Dog">
-                <h4>Mačo</h4>
-                <img src="../IMG/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="macio"> 
-                <p>Prancūzų buldogų skiriamasis bruožas – didelės ausys, dėl kurių šuo neretai primena šikšnosparnį. Tai yra nedideli, tačiau labai tvirti šunys, pasižymintys žaismingumu ir neišsenkančia energija. Prancūzų buldogas yra užsispyręs, tačiau labai gudrus šuo – savo intelektinius sugebėjimus dažniausiai naudoja savų tikslų siekimui. Paprastai sutaria su visais šeimos nariais, mielai žaidžia su vaikais, nevengia kitų šunų ar kačių draugijos. Nors prancūzų buldogai yra nedideli, tačiau tokie tikrai nesijaučia – 
-                  jei  reikės, būtinai stos ir prieš dešimtį kartų didesnį „priešą“.</p>
+              <div class="filterDiv Dog year ">
+                <h4>Tamas</h4>
+                <img src="../IMG/tamas-pap-bzTND2duFNE-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="macio"> 
                 </div>
-              <div class="filterDiv Cat">
+              <div class="filterDiv Cat till">
                 <h4>Blusius</h4>
                 <img src="../IMG/2-bro-s-media-HIWmYLqVA9w-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="macio">
-                <p>Norvegų miškinė katė yra didesnė už vidutinę katę. Šios veislės gyvūnai dailūs, pusilgio plauko kailiu 
-                  (vasarą jis būna šiek tiek trumpesnis). Kūnas ilgas, raumeningas ir tvirtai sudėtas, tvirtos kaulų struktūros. 
-                  Kojos ilgos, o uodega pūkuota. Galva ilga, trikampės formos, tiesaus profilio, ausys aukštai, o jų galiukai su 
-                  kuokšteliais. Lygus, žvilgus kailis dengia vilnų poplaukį ir neperšlampa. Užsiauginusi kailį katė turi apykaklę, krūtinės karčius bei šlaunų gaurus ir net plaukų kuokštelius tarppirščiuose. Norvegų miškinės katės būna visokių spalvų, išskyrus šokolado bei šviesiai violetinę arba Siamo žymes, tačiau gali turėti bet kokį skaičių baltų žymių ant letenų, krūtinės,
-                   pilvo ar snukučio. Akys gali būti bet kokios spalvos.</p>
                 </div>
-              <div class="filterDiv  Cat">
+              <div class="filterDiv  Cat after">
                 <h4>Momo</h4>
-                <img src="../IMG/250px-Longhairedmunchkin.jpg" class="img-thumbnail" height="150px" width="150" walt="Momo">
-                <p>Trumpakojė katė, arba Munčkinas (angl. Munchkin) – mutacinė kačių veislė. Išskirtinė savybė – labai trumpos kojos. Tai pakankamai nauja veislė, atsiradusi JAV, o vėliau paplitusi ir Prancūzijoje.</p>
+                <img src="../IMG/eagan-hsu-Ycamzv0LIsY-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="Momo">
               </div>
-              <div class="filterDiv Dog">
+              <div class="filterDiv Dog under">
                 <h4>Kenzas</h4>
                 <img src="../IMG/file70679962_fotolia-70018688.jpg" class="img-thumbnail" height="150px" width="150" walt="">
-                <p>Australijos aviganis - turi labai stiprius ganymo ir saugojimo instinktus, o ištvermė ir energija tiesiog neišsemiama. Tai ištikimi, paklusnūs šunys, stipriai prisirišę prie savo šeimininko, tačiau ne visuomet labai lengvai prisileidžiantys svetimus žmones ar gyvūnus.
                 </p>
               </div>
-              <div class="filterDiv Cat">
+              <div class="filterDiv Cat till">
                 <h4>Nimrodas</h4>
-                <img src="../IMG/3-78.jpg" class="img-thumbnail" height="150px" width="150" walt="">
-                <p>Škotų nulėpausis katinas. Šių kačių skiriamasis bruožas — ypatinga ausų forma ir jų mokėjimas stovėti ant užpakalinių kojų. Dėl tokių ausų jos laikomos 
-                  vienomis iš įdomiausių kačių. Tuo pačiu šios katės yra vienos iš protingiausių, nes jos puikiai bendrauja ir
-                   mėgsta judrius žaidimus.</p>
+               <img src="../IMG/3-78.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+              </div>
+              <div class="filterDiv Dog">
+                <h4>Fatis</h4>
+                <img src="../IMG/fatty-corgi-Zn5chZcnFRA-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+              </div>
+              <div class="filterDiv Cat after">
+                <h4>Timas</h4>
+                <img src="../IMG/tim-schmidbauer-JpXPDQoBAqQ-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+              </div>
+              <div class="filterDiv Dog year">
+                <h4>Mikis</h4>
+                <img src="../IMG/mike-burke-gxyfJQg7Lno-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+              </div>
+              <div class="filterDiv Cat after">
+                <h4>Murcius</h4>
+                <img src="../IMG/mikhail-vasilyev-IFxjDdqK_0U-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="">
+              </div>
+              <div class="filterDiv Cat after">
+                <h4>Hantas</h4>
+                <img src="../IMG/hunt-han-V8o2n1GbMWc-unsplash.jpg" class="img-thumbnail" height="150px" width="150" walt="">
               </div>
             </div>
           </div>
@@ -119,9 +123,9 @@
                   <tr>
                        <td class="align-middle  "> <nav class="navbar navbar-light bg-light">
                         <form class="container-fluid justify-content-start">
-                          <a class="btn btn-primary" href="#" role="button">Rekvizitai</a>
-                          <a class="btn btn-primary" href="#" role="button"><i class="fab fa-instagram"></i></a>
-                          <a class="btn btn-primary" href="#" role="button"><i class="fab fa-facebook"></i>
+                          <a class="btn btn-primary btn-color-blue" href="#" role="button">Rekvizitai</a>
+                          <a class="btn btn-primary btn-color-blue" href="#" role="button"><i class="fab fa-instagram"></i></a>
+                          <a class="btn btn-primary btn-color-blue" href="#" role="button"><i class="fab fa-facebook"></i>
                             Facebook</li></a>
                           <a class="btn btn-primary" href="#" role="button"><i class="fas fa-envelope"></i></a>
                          </form>
